@@ -1,0 +1,20 @@
+Audio Boost using MPlayer
+=========================
+
+Syntax:
+-------
+-af volume=20:0
+
+Would amplify the sound by 20dB and hard-clip if the sound level is too high.
+
+
+
+Avoid loud volume on startup
+============================
+
+Syntax:
+-------
+-volume 0
+
+
+

@@ -1,0 +1,7 @@
+0.6.54 -> 0.6.60
+================
+
+* [Improved] IPC (via pipe) performance and reliability
+* [Added] Auto stop MPlayer process after pipe flooded for a while
+* [Added] Double click on view to popup File Open dialog
+* Other minor improvements and bug fixes

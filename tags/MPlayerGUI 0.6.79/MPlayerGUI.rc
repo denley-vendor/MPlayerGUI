@@ -1,0 +1,1288 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\MPlayerGUI.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_VIDEOPANEL   BITMAP  DISCARDABLE     "res\\videopanel.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ENGINE              ICON    DISCARDABLE     "res\\Engine.ico"
+IDI_OUTPUT              ICON    DISCARDABLE     "res\\Output.ico"
+IDI_SUBTITLE            ICON    DISCARDABLE     "res\\Subtitle.ico"
+IDI_VIDEO               ICON    DISCARDABLE     "res\\Video.ico"
+IDI_ADVANCED            ICON    DISCARDABLE     "res\\Advanced.ico"
+IDI_NETRADIO            ICON    DISCARDABLE     "res\\NetRadio.ico"
+IDI_NET_OUT             ICON    DISCARDABLE     "res\\Net_Out.ico"
+IDI_AUDIO_NO_AUDIO      ICON    DISCARDABLE     "res\\Audio_No_Audio.ico"
+IDI_AUDIO_STEREOL       ICON    DISCARDABLE     "res\\Audio_StereoL.ico"
+IDI_AUDIO_STEREOR       ICON    DISCARDABLE     "res\\Audio_StereoR.ico"
+IDI_FILE_BLANK          ICON    DISCARDABLE     "res\\File_Blank.ico"
+IDI_FILE_LOCALMEDIA     ICON    DISCARDABLE     "res\\File_LocalMedia.ico"
+IDI_NET_BUFFERING       ICON    DISCARDABLE     "res\\Net_Buffering.ico"
+IDI_NET_INOUT           ICON    DISCARDABLE     "res\\Net_InOut.ico"
+IDI_NET_OK              ICON    DISCARDABLE     "res\\Net_OK.ico"
+IDI_AUDIO_MONO          ICON    DISCARDABLE     "res\\Audio_Mono.ico"
+IDI_NET_REC_020         ICON    DISCARDABLE     "res\\Net_Receive_020.ico"
+IDI_ALERT               ICON    DISCARDABLE     "res\\Alert.ico"
+IDI_SHUTDOWN            ICON    DISCARDABLE     "res\\Shuwdown.ico"
+IDI_KEYBOARD            ICON    DISCARDABLE     "res\\Keyboard.ico"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BLACK        BITMAP  DISCARDABLE     "res\\bitmap_b.bmp"
+IDR_MYTOOLBAR           BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MPlayerGUI.ico"
+IDR_MPLAYETYPE          ICON    DISCARDABLE     "res\\MediaType.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MYTOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_PLAY_PLAY
+    BUTTON      ID_PLAY_PAUSE
+    BUTTON      ID_PLAY_STOP
+    SEPARATOR
+    BUTTON      ID_PLAY_PREVIOUS
+    BUTTON      ID_PLAY_NEXT
+    SEPARATOR
+    BUTTON      ID_PLAY_REPEAT
+    SEPARATOR
+    BUTTON      ID_VIEW_PLAYLIST
+    SEPARATOR
+    BUTTON      ID_VOLUME_MUTE
+    BUTTON      IDC_SLIDER_VOLUME
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Open URL...",                 ID_FILE_OPENURL
+        MENUITEM "&Close",                      ID_FILE_CLOSE_FILE
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties",                 ID_FILE_CLIPPROPERTY
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Half size\tAlt+1",           ID_VIEW_ZOOMHALF
+        MENUITEM "&Original size\tAlt+2",       ID_VIEW_ZOOM1X
+        MENUITEM "&Double size\tAlt+3",         ID_VIEW_ZOOM2X
+        MENUITEM "Pr&eset size\tAlt+4",         ID_VIEW_ZOOMPRESET
+        MENUITEM "&Full Screen\tAlt+Enter",     ID_VIEW_FULLSCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "Keep aspect &ratio",          ID_VIEW_KEEPASPECTRATIO
+        MENUITEM SEPARATOR
+        MENUITEM "&Progress Bar\tCtrl+1",       ID_VIEW_PROGRESS_BAR
+        MENUITEM "&Toolbar\tCtrl+2",            ID_VIEW_MYTOOLBAR
+        MENUITEM "&Status Bar\tCtrl+3",         ID_VIEW_STATUSBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Play&list",                   ID_VIEW_PLAYLIST
+        MENUITEM "Lo&g",                        ID_VIEW_LOG
+        MENUITEM SEPARATOR
+        MENUITEM "&Always on Top\tCtrl+T",      ID_VIEW_ALWAYSONTOP
+    END
+    POPUP "&Play"
+    BEGIN
+        MENUITEM "&Play\tSpace",                ID_PLAY_PLAY
+        MENUITEM "P&ause\tSpace",               ID_PLAY_PAUSE
+        MENUITEM "&Stop\tPeriod",               ID_PLAY_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "Send Comman&d...\tCtrl+D",    ID_PLAY_SENDCOMMAND
+        MENUITEM SEPARATOR
+        MENUITEM "Previous",                    ID_PLAY_PREVIOUS
+        MENUITEM "Next",                        ID_PLAY_NEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Forward 10 Seconds\tCtrl+Right", ID_PLAY_FF10S
+        MENUITEM "Rewind  10 Seconds\tCtrl+Left", ID_PLAY_REW10S
+        MENUITEM "Forward  1 Minute\tCtrl+Up",  ID_PLAY_FF1M
+        MENUITEM "Rewind   1 Minute\tCtrl+Down", ID_PLAY_REW1M
+        MENUITEM "Forward 10 Minutes\tCtrl+PgUp", ID_PLAY_FF10M
+        MENUITEM "Rewind  10 Minutes\tCtrl+PgDn", ID_PLAY_REW10M
+        MENUITEM SEPARATOR
+        MENUITEM "&Go To...\tCtrl+G",           ID_PLAY_GOTO
+        MENUITEM SEPARATOR
+        POPUP "Volume"
+        BEGIN
+            MENUITEM "100%",                        ID_VOLUME_100
+            MENUITEM "75%",                         ID_VOLUME_75
+            MENUITEM "50%",                         ID_VOLUME_50
+            MENUITEM "25%",                         ID_VOLUME_25
+            MENUITEM "&Mute\tCtrl+M",               ID_VOLUME_MUTE
+        END
+        POPUP "After Playback"
+        BEGIN
+            MENUITEM "Shutdown",                    ID_PLAY_AFTERPLAYBACK_SHUTDOWN
+
+            MENUITEM SEPARATOR
+            MENUITEM "Do Nothing",                  ID_PLAY_AFTERPLAYBACK_DONOTHING
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Repeat",                     ID_PLAY_REPEAT
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Preferences",                ID_OPTIONS_PREFERENCES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Home Page",                   ID_HELP_HOMEPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&About MPlayerGUI",           ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_CONTEXT MENU DISCARDABLE 
+BEGIN
+    POPUP "Context"
+    BEGIN
+        MENUITEM "&Play",                       ID_PLAY_PLAY
+        MENUITEM "P&ause",                      ID_PLAY_PAUSE
+        MENUITEM "&Stop",                       ID_PLAY_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&Half size",                  ID_VIEW_ZOOMHALF
+        MENUITEM "&Original size",              ID_VIEW_ZOOM1X
+        MENUITEM "&Double size",                ID_VIEW_ZOOM2X
+        MENUITEM "Pr&eset size",                ID_VIEW_ZOOMPRESET
+        MENUITEM SEPARATOR
+        MENUITEM "&Full Screen",                ID_VIEW_FULLSCREEN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    ".",            ID_PLAY_STOP,           ASCII,  NOINVERT
+    "1",            ID_VIEW_PROGRESS_BAR,   VIRTKEY, CONTROL, NOINVERT
+    "1",            ID_VIEW_ZOOMHALF,       VIRTKEY, ALT, NOINVERT
+    "2",            ID_VIEW_TOOLBAR,        VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_VIEW_ZOOM1X,         VIRTKEY, ALT, NOINVERT
+    "3",            ID_VIEW_STATUSBAR,      VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_VIEW_ZOOM2X,         VIRTKEY, ALT, NOINVERT
+    "4",            ID_VIEW_ZOOMPRESET,     VIRTKEY, ALT, NOINVERT
+    "D",            ID_PLAY_SENDCOMMAND,    VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_PLAY_GOTO,           VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_VOLUME_MUTE,         VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_VIEW_ALWAYSONTOP,    VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_PLAY_REW1M,          VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_F1CMD,               VIRTKEY, NOINVERT
+    VK_F2,          ID_F2CMD,               VIRTKEY, NOINVERT
+    VK_F3,          ID_F3CMD,               VIRTKEY, NOINVERT
+    VK_F4,          ID_F4CMD,               VIRTKEY, NOINVERT
+    VK_F5,          ID_F5CMD,               VIRTKEY, NOINVERT
+    VK_F6,          ID_F6CMD,               VIRTKEY, NOINVERT
+    VK_F7,          ID_F7CMD,               VIRTKEY, NOINVERT
+    VK_F8,          ID_F8CMD,               VIRTKEY, NOINVERT
+    VK_LEFT,        ID_PLAY_REW10S,         VIRTKEY, CONTROL, NOINVERT
+    VK_NEXT,        ID_PLAY_REW10M,         VIRTKEY, CONTROL, NOINVERT
+    VK_PRIOR,       ID_PLAY_FF10M,          VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_VIEW_FULLSCREEN,     VIRTKEY, ALT, NOINVERT
+    VK_RIGHT,       ID_PLAY_FF10S,          VIRTKEY, CONTROL, NOINVERT
+    VK_SPACE,       ID_PLAY_PAUSE,          VIRTKEY, NOINVERT
+    VK_UP,          ID_PLAY_FF1M,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 187, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MPlayerGUI"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,140,39,40,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,9,20,20
+    LTEXT           "MPlayerGUI",IDC_STATIC,36,10,45,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) Jason Yang",IDC_STATIC,36,22,119,8
+    LTEXT           "Version:",IDC_STATIC,36,34,34,8
+    LTEXT           "0.6.79",IDC_STATIC,77,34,25,8
+END
+
+IDD_PROGRESS_DLGBAR DIALOG DISCARDABLE  0, 0, 330, 9
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_PROGRESS,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,7,59,6
+END
+
+IDD_PLAYLIST DIALOG DISCARDABLE  0, 0, 325, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Playlist"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST_PLAYLIST,7,7,256,142,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Play",IDC_BUTTON_PL_STARTPLAY,268,7,50,14
+    PUSHBUTTON      "Add...",IDC_BUTTON_PL_ADD,268,23,50,14
+    PUSHBUTTON      "Load...",IDC_BUTTON_PL_LOAD,268,39,50,14
+    PUSHBUTTON      "Save...",IDC_BUTTON_PL_SAVE,268,55,50,14
+    PUSHBUTTON      "Sort",IDC_BUTTON_PL_SORT,268,87,50,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_PL_REMOVE,268,103,50,14
+    PUSHBUTTON      "Remove All",IDC_BUTTON_PL_REMOVEALL,268,119,50,14
+    PUSHBUTTON      "Shuffle",IDC_BUTTON_PL_SHUFFLE,268,135,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,268,78,51,1
+END
+
+IDD_PROPPAGE_PATH DIALOG DISCARDABLE  0, 0, 270, 220
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Engine"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_MPLAYER_PATHNAME,21,76,214,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_PATHNAMEBROWSE,240,76,17,14
+    CONTROL         "Use default settings (%MPlayerGUI%/mplayer/mplayer.exe)",
+                    IDC_RADIO_USEDEFAULTPATH,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,13,47,244,10
+    CONTROL         "Use specified Engine below:",IDC_RADIO_USESPECIFIEDPATH,
+                    "Button",BS_AUTORADIOBUTTON,13,61,124,10
+    ICON            IDI_ENGINE,IDC_STATIC,7,7,20,20
+    LTEXT           "Select MPlayer Engine to be used",IDC_STATIC,33,8,223,8
+    LTEXT           "MPlayer Binary (Engine)",IDC_STATIC,7,34,93,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,103,38,160,1
+END
+
+IDD_PROPPAGE_OUTPUT DIALOG DISCARDABLE  0, 0, 270, 220
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Output"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_AUDIOOUTPUTDRIVER,13,47,80,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_VIDEOOUTPUTDRIVER,13,78,80,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "(default: dsound)",IDC_STATIC,98,49,69,8
+    LTEXT           "(default: directx)",IDC_STATIC,98,80,73,8
+    ICON            IDI_OUTPUT,IDC_STATIC,7,7,20,20
+    LTEXT           "Choose MPlayer output drivers",IDC_STATIC,33,8,128,8
+    LTEXT           "Audio Output Driver",IDC_STATIC,7,34,77,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,88,38,175,1
+    LTEXT           "Video Output Driver",IDC_STATIC,7,65,77,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,89,69,174,1
+END
+
+IDD_PROPPAGE_PLAYER DIALOG DISCARDABLE  0, 0, 270, 245
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Player"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Toolbar",IDC_CHECK_SHOW_TOOLBAR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,48,44,10
+    CONTROL         "Progress Bar",IDC_CHECK_SHOW_PROGRESSBAR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,91,48,64,10
+    CONTROL         "Playlist",IDC_CHECK_SHOW_PLAYLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,196,49,48,10
+    CONTROL         "Status Bar",IDC_CHECK_SHOW_STATUSBAR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,62,56,10
+    COMBOBOX        IDC_COMBO_SSDISABLEMODE,14,88,243,42,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PRESETZOOM,14,120,30,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Allow Multiple Instances",
+                    IDC_CHECK_ALLOWMULTIPLEINSTANCES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,151,242,10
+    CONTROL         "Auto Shuffle Playlist",IDC_CHECK_AUTOSHUFFLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,165,242,10
+    CONTROL         "Enable 'Always on Top' on startup",
+                    IDC_CHECK_STARTUP_AOT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,179,242,10
+    CONTROL         "Launch files in fullscreen",
+                    IDC_CHECK_LAUNCHINFULLSCREEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,192,242,10
+    CONTROL         "Show controls in fullscreen",
+                    IDC_CHECK_SHOWCONTROLSINFULLSCREEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,205,242,10
+    CONTROL         "Remember last playback position",
+                    IDC_CHECK_REMEMBERLASTPLAYBACKPOSITION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,218,242,10
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "Configure MPlayerGUI Player",IDC_STATIC,33,8,222,8
+    LTEXT           "% of the original video size",IDC_STATIC,47,122,113,8
+    LTEXT           "Preset size (zoom factor)",IDC_STATIC,7,106,101,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,111,110,152,1
+    LTEXT           "Screen Saver (and Power Saving) Settings",IDC_STATIC,7,
+                    75,161,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,171,78,92,1
+    LTEXT           "Show these parts of the GUI on startup",IDC_STATIC,7,34,
+                    153,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,164,38,99,1
+    LTEXT           "Other options",IDC_STATIC,8,138,53,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,66,142,197,1
+END
+
+IDD_PROPPAGE_ADVANCED DIALOG DISCARDABLE  0, 0, 270, 260
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Advanced"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_MPLAYER_PRIORITY,14,48,80,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MPLAYER_USER_CONFIG,14,94,243,39,ES_MULTILINE | 
+                    WS_VSCROLL
+    CONTROL         "Enable MPlayerMonitor Thread",
+                    IDC_CHECK_ENABLEMPLAYERMONITOR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,166,242,10
+    EDITTEXT        IDC_EDIT_MPLAYERMONITOR_THRESHOLD,74,181,20,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Enable Logging",IDC_CHECK_ENABLELOGGING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,199,242,10
+    CONTROL         "Enable Argument ""-volume""",
+                    IDC_CHECK_ENABLEARGUMENTVOLUME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,213,242,10
+    CONTROL         "Allow send command while paused (for MPlayer2)",
+                    IDC_CHECK_ALLOWSENDCMDWHILEPAUSED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,227,242,10
+    LTEXT           "For example: -af resample=8000:1:0",IDC_STATIC,14,139,
+                    225,8
+    LTEXT           "(default: Normal)",IDC_STATIC,100,50,76,8
+    LTEXT           "Caution: Use 'Real Time' priority may cause system lock-up",
+                    IDC_STATIC,14,66,243,8
+    ICON            IDI_ADVANCED,IDC_STATIC,7,7,20,20
+    LTEXT           "Set Advanced settings here (for experienced users only)",
+                    IDC_STATIC,33,8,225,8
+    LTEXT           "MPlayer process priority",IDC_STATIC,7,34,97,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,108,38,155,1
+    LTEXT           "Additional MPlayer parameters",IDC_STATIC,7,80,117,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,128,84,135,1
+    LTEXT           "Other options",IDC_STATIC,8,152,53,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,65,156,198,1
+    LTEXT           "Threshold:",IDC_STATIC,31,183,41,8
+    LTEXT           "second(s)",IDC_STATIC,100,183,37,8
+END
+
+IDD_OPENURL DIALOG DISCARDABLE  0, 0, 215, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open URL"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_OPENURL,7,35,201,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Open",IDOK,104,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,158,66,50,14
+    LTEXT           "Enter a URL to open here.",IDC_STATIC,33,8,133,8
+    LTEXT           "For example: http://www.server.com/file.mp3",IDC_STATIC,
+                    7,53,191,8
+    ICON            IDI_NETRADIO,IDC_STATIC,7,7,20,20
+END
+
+IDD_GOTO DIALOG DISCARDABLE  0, 0, 169, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Go To"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_GOTO_H,35,22,20,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_H,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,57,22,11,
+                    14
+    EDITTEXT        IDC_EDIT_GOTO_M,80,22,20,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_M,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,102,22,
+                    11,14
+    EDITTEXT        IDC_EDIT_GOTO_S,125,22,20,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_S,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,147,22,
+                    11,14
+    DEFPUSHBUTTON   "GO",IDOK,58,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,112,45,50,14
+    LTEXT           ":",IDC_STATIC,117,24,8,8
+    LTEXT           "Hours",IDC_STATIC,35,9,21,8
+    LTEXT           "Minutes",IDC_STATIC,80,9,29,8
+    LTEXT           "Seconds",IDC_STATIC,125,9,29,8
+    LTEXT           ":",IDC_STATIC,72,24,8,8
+    LTEXT           "Time",IDC_STATIC,12,24,17,8
+END
+
+IDD_PROPPAGE_SUBTITLES DIALOG DISCARDABLE  0, 0, 270, 220
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Subtitles"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Auto-load subtitles",IDC_CHECK_AUTOLOADSUB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,34,239,10
+    EDITTEXT        IDC_EDIT_FONTPATHNAME,16,62,221,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_PICKFONT,241,62,17,14
+    COMBOBOX        IDC_COMBO_SUBCP,16,107,221,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    ICON            IDI_SUBTITLE,IDC_STATIC,7,7,21,23
+    LTEXT           "Set Subtitle related options here",IDC_STATIC,33,8,222,
+                    8
+    LTEXT           "For example: C:\\WINNT\\FONTS\\ARIAL.TTF",IDC_STATIC,16,
+                    81,161,8
+    LTEXT           "Font",IDC_STATIC,7,50,17,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,27,53,236,1
+    LTEXT           "Encoding",IDC_STATIC,7,93,33,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,44,97,219,1
+END
+
+IDD_PROPPAGE_VIDEO DIALOG DISCARDABLE  0, 0, 270, 220
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Video"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Double buffering",IDC_CHECK_DOUBLEBUFFERING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,50,80,10
+    CONTROL         "Slider1",IDC_SLIDER_BRIGHTNESS,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,62,67,190,13
+    CONTROL         "Slider1",IDC_SLIDER_CONTRAST,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,62,96,190,13
+    CONTROL         "Slider1",IDC_SLIDER_HUE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,62,125,190,13
+    CONTROL         "Slider1",IDC_SLIDER_SATURATION,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,62,154,190,13
+    PUSHBUTTON      "Reset",IDC_BUTTON_VIDEO_RESET,202,177,50,14
+    LTEXT           "Brightness",IDC_STATIC,15,69,41,8
+    LTEXT           "Contrast",IDC_STATIC,15,98,33,8
+    LTEXT           "Hue",IDC_STATIC,15,127,13,8
+    LTEXT           "Saturation",IDC_STATIC,15,156,41,8
+    EDITTEXT        IDC_EDIT_BRIGHTNESS,30,80,30,14,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTRAST,30,109,30,14,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HUE,30,138,30,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SATURATION,30,168,30,14,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT 
+                    WS_TABSTOP
+    ICON            IDI_VIDEO,IDC_STATIC,7,7,20,20
+    LTEXT           "Configure Video Settings here",IDC_STATIC,33,8,117,8
+    LTEXT           "Video Settings",IDC_STATIC,7,34,57,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,68,38,195,1
+    LTEXT           "Any changes will take effect only after restart of MPlayer",
+                    IDC_STATIC,15,198,233,8
+END
+
+IDD_PROPPAGE_FILE DIALOG DISCARDABLE  0, 0, 245, 230
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "File"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE_LENGTH,82,42,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_FILE_BITRATE,82,56,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_FILE_MEDIATYPE,82,70,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_FILE_VIDEOSIZE,82,84,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_FILE_ASPECTRATIO,82,98,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_FILE_AUDIOCODEC,82,112,150,18,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_FILE_VIDEOCODEC,82,130,150,18,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_FILE_LOCATION,82,148,150,50,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER
+    ICON            IDR_MPLAYETYPE,IDC_STATIC,7,7,20,20
+    LTEXT           "View advanced details about the clip.",IDC_STATIC,33,8,
+                    149,8
+    LTEXT           "Length:",IDC_STATIC,11,42,29,8
+    LTEXT           "Bit rate:",IDC_STATIC,11,56,37,8
+    LTEXT           "Media type:",IDC_STATIC,11,70,45,8
+    LTEXT           "Video size:",IDC_STATIC,11,84,45,8
+    LTEXT           "Aspect Ratio:",IDC_STATIC,11,98,53,8
+    LTEXT           "Audio codec:",IDC_STATIC,11,112,49,8
+    LTEXT           "Video codec:",IDC_STATIC,11,130,49,8
+    LTEXT           "Location:",IDC_STATIC,11,148,37,8
+END
+
+IDD_PROPPAGE_CONTENT DIALOG DISCARDABLE  0, 0, 245, 230
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Content"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_CONTENT_TITLE,82,42,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_CONTENT_ARTIST,82,56,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_CONTENT_ALBUM,82,70,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_CONTENT_COMPOSER,82,84,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_CONTENT_GENRE,82,98,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_CONTENT_COPYRIGHT,82,112,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_CONTENT_RATING,82,126,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_CONTENT_COMMENTS,82,140,150,83,ES_MULTILINE | 
+                    ES_READONLY | NOT WS_BORDER | WS_VSCROLL
+    ICON            IDR_MPLAYETYPE,IDC_STATIC,7,7,20,20
+    LTEXT           "View details about the clip.",IDC_STATIC,33,8,113,8
+    LTEXT           "Title:",IDC_STATIC,11,42,25,8
+    LTEXT           "Artist:",IDC_STATIC,11,56,29,8
+    LTEXT           "Album:",IDC_STATIC,11,70,25,8
+    LTEXT           "Composer:",IDC_STATIC,11,84,37,8
+    LTEXT           "Genre:",IDC_STATIC,11,98,25,8
+    LTEXT           "Copyright:",IDC_STATIC,11,112,41,8
+    LTEXT           "Rating:",IDC_STATIC,11,126,29,8
+    LTEXT           "Comments:",IDC_STATIC,11,140,37,8
+END
+
+IDD_PLAYER_STATUSBAR DIALOG DISCARDABLE  0, 0, 330, 15
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_PROPPAGE_ASSOCIATION DIALOG DISCARDABLE  0, 0, 270, 220
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Association"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MPLAYETYPE,IDC_STATIC,7,7,20,20
+    LTEXT           "Add media file extensions MPlayerGUI to handle",
+                    IDC_STATIC,33,8,223,8
+    EDITTEXT        IDC_EDIT_EXTENSIONS,14,46,101,119,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "one extension pre-line, without the preceding period (dot)",
+                    IDC_STATIC,14,169,233,8
+    PUSHBUTTON      "Load...",IDC_BUTTON_EXT_LOAD,121,134,50,14
+    PUSHBUTTON      "Associate!",IDC_BUTTON_EXT_ASSOCIATE,121,151,50,14
+    LTEXT           "for example:\n\nwav\nmpeg\nmp4\n3gp\nogg\nmov",
+                    IDC_STATIC,121,46,53,69
+    ICON            IDI_ALERT,IDC_STATIC,202,136,20,20
+    LTEXT           "Extensions",IDC_STATIC,7,34,41,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,52,38,211,1
+END
+
+IDD_LOG DIALOG DISCARDABLE  0, 0, 300, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Log"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,243,209,50,14
+    EDITTEXT        IDC_EDIT_LOG,7,7,286,195,ES_MULTILINE | WS_VSCROLL | 
+                    WS_HSCROLL
+    PUSHBUTTON      "Reset",IDC_BUTTON_LOG_RESET,7,209,50,14
+END
+
+IDD_SHUTDOWN DIALOG DISCARDABLE  0, 0, 147, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shutdown"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,90,33,50,14
+    ICON            IDI_SHUTDOWN,IDC_STATIC,7,7,21,23
+    LTEXT           "Shutdown in",IDC_STATIC,33,10,45,8
+    LTEXT           "seconds...",IDC_STATIC,97,10,41,8
+    EDITTEXT        IDC_EDIT_SHUTDOWN_COUNTER,82,10,15,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+END
+
+IDD_PROPPAGE_COMMANDS DIALOG DISCARDABLE  0, 0, 270, 220
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Commands"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_F1CMD,29,48,230,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F2CMD,29,64,230,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F3CMD,29,80,230,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F4CMD,29,96,230,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F5CMD,29,112,230,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F6CMD,29,128,230,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F7CMD,29,144,230,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F8CMD,29,160,230,14,ES_AUTOHSCROLL
+    ICON            IDI_KEYBOARD,IDC_STATIC,7,7,20,20
+    LTEXT           "Set special commands here",IDC_STATIC,33,8,222,8
+    LTEXT           "Keys and Commands",IDC_STATIC,7,34,69,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,78,38,185,1
+    LTEXT           "F1",IDC_STATIC,16,51,9,8
+    LTEXT           "F2",IDC_STATIC,16,67,9,8
+    LTEXT           "F3",IDC_STATIC,16,83,9,8
+    LTEXT           "F4",IDC_STATIC,16,99,9,8
+    LTEXT           "F5",IDC_STATIC,16,115,9,8
+    LTEXT           "F6",IDC_STATIC,16,131,9,8
+    LTEXT           "F7",IDC_STATIC,16,147,9,8
+    LTEXT           "F8",IDC_STATIC,16,163,9,8
+END
+
+IDD_SENDCOMMAND DIALOG DISCARDABLE  0, 0, 187, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send Command"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_SENDCOMMAND,44,22,136,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Send",IDOK,75,44,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,44,50,14
+    LTEXT           "Send command to MPlayer process",IDC_STATIC,7,7,125,8
+    LTEXT           "Command:",IDC_STATIC,7,24,33,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,6,79,0
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "20110919\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MPlayerGUI MFC Application\0"
+            VALUE "FileVersion", "0, 6, 79, 0\0"
+            VALUE "InternalName", "MPlayerGUI\0"
+            VALUE "LegalCopyright", "Copyright (C) Jason Yang\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MPlayerGUI.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MPlayerGUI Application\0"
+            VALUE "ProductVersion", "0, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_PROGRESS_DLGBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 2
+    END
+
+    IDD_PLAYLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_PROPPAGE_PATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_PROPPAGE_OUTPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_PROPPAGE_PLAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_PROPPAGE_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_OPENURL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_GOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_PROPPAGE_SUBTITLES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_PROPPAGE_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_PROPPAGE_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_PROPPAGE_CONTENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_PLAYER_STATUSBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 8
+    END
+
+    IDD_PROPPAGE_ASSOCIATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_SHUTDOWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPPAGE_COMMANDS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_SENDCOMMAND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPPAGE_OUTPUT DLGINIT
+BEGIN
+    IDC_COMBO_AUDIOOUTPUTDRIVER, 0x403, 8, 0
+0x6f6e, 0x6f73, 0x6e75, 0x0064, 
+    IDC_COMBO_AUDIOOUTPUTDRIVER, 0x403, 5, 0
+0x756e, 0x6c6c, "\000" 
+    IDC_COMBO_AUDIOOUTPUTDRIVER, 0x403, 7, 0
+0x7364, 0x756f, 0x646e, "\000" 
+    IDC_COMBO_AUDIOOUTPUTDRIVER, 0x403, 6, 0
+0x6977, 0x336e, 0x0032, 
+    IDC_COMBO_VIDEOOUTPUTDRIVER, 0x403, 8, 0
+0x6f6e, 0x6976, 0x6564, 0x006f, 
+    IDC_COMBO_VIDEOOUTPUTDRIVER, 0x403, 5, 0
+0x756e, 0x6c6c, "\000" 
+    IDC_COMBO_VIDEOOUTPUTDRIVER, 0x403, 8, 0
+0x6964, 0x6572, 0x7463, 0x0078, 
+    IDC_COMBO_VIDEOOUTPUTDRIVER, 0x403, 16, 0
+0x6964, 0x6572, 0x7463, 0x3a78, 0x6f6e, 0x6361, 0x6563, 0x006c, 
+    IDC_COMBO_VIDEOOUTPUTDRIVER, 0x403, 3, 0
+0x6c67, "\000" 
+    IDC_COMBO_VIDEOOUTPUTDRIVER, 0x403, 4, 0
+0x6c67, 0x0032, 
+    IDC_COMBO_VIDEOOUTPUTDRIVER, 0x403, 9, 0
+0x6964, 0x6572, 0x7463, 0x6433, "\000" 
+    0
+END
+
+IDD_PROPPAGE_PLAYER DLGINIT
+BEGIN
+    IDC_COMBO_SSDISABLEMODE, 0x403, 14, 0
+0x6f44, 0x276e, 0x2074, 0x6964, 0x6173, 0x6c62, 0x0065, 
+    IDC_COMBO_SSDISABLEMODE, 0x403, 21, 0
+0x6944, 0x6173, 0x6c62, 0x2065, 0x6877, 0x6e65, 0x7020, 0x616c, 0x6979, 
+0x676e, "\000" 
+    IDC_COMBO_SSDISABLEMODE, 0x403, 44, 0
+0x6944, 0x6173, 0x6c62, 0x2065, 0x6669, 0x6d20, 0x6465, 0x6169, 0x6320, 
+0x696c, 0x2070, 0x6f63, 0x746e, 0x6961, 0x736e, 0x7620, 0x6469, 0x6f65, 
+0x7320, 0x7274, 0x6165, 0x006d, 
+    0
+END
+
+IDD_PROPPAGE_ADVANCED DLGINIT
+BEGIN
+    IDC_COMBO_MPLAYER_PRIORITY, 0x403, 5, 0
+0x6449, 0x656c, "\000" 
+    IDC_COMBO_MPLAYER_PRIORITY, 0x403, 13, 0
+0x6542, 0x6f6c, 0x2077, 0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_MPLAYER_PRIORITY, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_MPLAYER_PRIORITY, 0x403, 13, 0
+0x6241, 0x766f, 0x2065, 0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_MPLAYER_PRIORITY, 0x403, 5, 0
+0x6948, 0x6867, "\000" 
+    IDC_COMBO_MPLAYER_PRIORITY, 0x403, 10, 0
+0x6552, 0x6c61, 0x5420, 0x6d69, 0x0065, 
+    0
+END
+
+IDD_PROPPAGE_SUBTITLES DLGINIT
+BEGIN
+    IDC_COMBO_SUBCP, 0x403, 8, 0
+0x6544, 0x6166, 0x6c75, 0x0074, 
+    IDC_COMBO_SUBCP, 0x403, 8, 0
+0x6e55, 0x6369, 0x646f, 0x0065, 
+    IDC_COMBO_SUBCP, 0x403, 6, 0
+0x5455, 0x2d46, 0x0038, 
+    IDC_COMBO_SUBCP, 0x403, 40, 0
+0x6557, 0x7473, 0x7265, 0x206e, 0x7545, 0x6f72, 0x6570, 0x6e61, 0x4c20, 
+0x6e61, 0x7567, 0x6761, 0x7365, 0x2820, 0x5349, 0x2d4f, 0x3838, 0x3935, 
+0x312d, 0x0029, 
+    IDC_COMBO_SUBCP, 0x403, 51, 0
+0x6557, 0x7473, 0x7265, 0x206e, 0x7545, 0x6f72, 0x6570, 0x6e61, 0x4c20, 
+0x6e61, 0x7567, 0x6761, 0x7365, 0x7720, 0x7469, 0x2068, 0x7545, 0x6f72, 
+0x2820, 0x5349, 0x2d4f, 0x3838, 0x3935, 0x312d, 0x2935, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 47, 0
+0x6c53, 0x7661, 0x6369, 0x432f, 0x6e65, 0x7274, 0x6c61, 0x4520, 0x7275, 
+0x706f, 0x6165, 0x206e, 0x614c, 0x676e, 0x6175, 0x6567, 0x2073, 0x4928, 
+0x4f53, 0x382d, 0x3538, 0x2d39, 0x2932, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 51, 0
+0x7345, 0x6570, 0x6172, 0x746e, 0x2c6f, 0x4720, 0x6c61, 0x6369, 0x6169, 
+0x2c6e, 0x4d20, 0x6c61, 0x6574, 0x6573, 0x202c, 0x7554, 0x6b72, 0x7369, 
+0x2068, 0x4928, 0x4f53, 0x382d, 0x3538, 0x2d39, 0x2933, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 32, 0
+0x6c4f, 0x2064, 0x6142, 0x746c, 0x6369, 0x6320, 0x6168, 0x7372, 0x7465, 
+0x2820, 0x5349, 0x2d4f, 0x3838, 0x3935, 0x342d, 0x0029, 
+    IDC_COMBO_SUBCP, 0x403, 22, 0
+0x7943, 0x6972, 0x6c6c, 0x6369, 0x2820, 0x5349, 0x2d4f, 0x3838, 0x3935, 
+0x352d, 0x0029, 
+    IDC_COMBO_SUBCP, 0x403, 20, 0
+0x7241, 0x6261, 0x6369, 0x2820, 0x5349, 0x2d4f, 0x3838, 0x3935, 0x362d, 
+0x0029, 
+    IDC_COMBO_SUBCP, 0x403, 26, 0
+0x6f4d, 0x6564, 0x6e72, 0x4720, 0x6572, 0x6b65, 0x2820, 0x5349, 0x2d4f, 
+0x3838, 0x3935, 0x372d, 0x0029, 
+    IDC_COMBO_SUBCP, 0x403, 21, 0
+0x7554, 0x6b72, 0x7369, 0x2068, 0x4928, 0x4f53, 0x382d, 0x3538, 0x2d39, 
+0x2939, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 21, 0
+0x6142, 0x746c, 0x6369, 0x2820, 0x5349, 0x2d4f, 0x3838, 0x3935, 0x312d, 
+0x2933, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 21, 0
+0x6543, 0x746c, 0x6369, 0x2820, 0x5349, 0x2d4f, 0x3838, 0x3935, 0x312d, 
+0x2934, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 29, 0
+0x6548, 0x7262, 0x7765, 0x6320, 0x6168, 0x7372, 0x7465, 0x2073, 0x4928, 
+0x4f53, 0x382d, 0x3538, 0x2d39, 0x2938, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 17, 0
+0x7552, 0x7373, 0x6169, 0x206e, 0x4b28, 0x494f, 0x2d38, 0x2952, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 34, 0
+0x6b55, 0x6172, 0x6e69, 0x6169, 0x2c6e, 0x4220, 0x6c65, 0x7261, 0x7375, 
+0x6169, 0x206e, 0x4b28, 0x494f, 0x2d38, 0x2f55, 0x5552, 0x0029, 
+    IDC_COMBO_SUBCP, 0x403, 35, 0
+0x6953, 0x706d, 0x696c, 0x6966, 0x6465, 0x4320, 0x6968, 0x656e, 0x6573, 
+0x6320, 0x6168, 0x7372, 0x7465, 0x2820, 0x5043, 0x3339, 0x2936, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 35, 0
+0x7254, 0x6461, 0x7469, 0x6f69, 0x616e, 0x206c, 0x6843, 0x6e69, 0x7365, 
+0x2065, 0x6863, 0x7261, 0x6573, 0x2074, 0x4228, 0x4749, 0x2935, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 30, 0
+0x614a, 0x6170, 0x656e, 0x6573, 0x6320, 0x6168, 0x7372, 0x7465, 0x2073, 
+0x5328, 0x4948, 0x5446, 0x4a2d, 0x5349, 0x0029, 
+    IDC_COMBO_SUBCP, 0x403, 23, 0
+0x6f4b, 0x6572, 0x6e61, 0x6320, 0x6168, 0x7372, 0x7465, 0x2820, 0x5043, 
+0x3439, 0x2939, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 21, 0
+0x6854, 0x6961, 0x6320, 0x6168, 0x7372, 0x7465, 0x2820, 0x5043, 0x3738, 
+0x2934, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 26, 0
+0x7943, 0x6972, 0x6c6c, 0x6369, 0x5720, 0x6e69, 0x6f64, 0x7377, 0x2820, 
+0x5043, 0x3231, 0x3135, 0x0029, 
+    IDC_COMBO_SUBCP, 0x403, 41, 0
+0x6c53, 0x7661, 0x6369, 0x432f, 0x6e65, 0x7274, 0x6c61, 0x4520, 0x7275, 
+0x706f, 0x6165, 0x206e, 0x6957, 0x646e, 0x776f, 0x2073, 0x4328, 0x3150, 
+0x3532, 0x2930, "\000" 
+    IDC_COMBO_SUBCP, 0x403, 24, 0
+0x7241, 0x6261, 0x6369, 0x5720, 0x6e69, 0x6f64, 0x7377, 0x2820, 0x5043, 
+0x3231, 0x3635, 0x0029, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "MPlayerGUI\n\nMPlaye\n\n\nMPlayerGUI.Document\nMPlaye Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MPlayerGUI"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_TIME       "00:00 / 00:00"
+    ID_INDICATOR_LENGTH     "00:00"
+    ID_INDICATOR_STATUS     "MPlayerGUI"
+    ID_INDICATOR_ABPS       "00000Kbps"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_MPLAYER_PLAYING_SINGLE "Playing..."
+    IDS_MPLAYER_PAUSE       "Paused"
+    IDS_MPLAYER_STOP        "Stopped"
+    IDS_MPLAYER_ASKTOSTART  "Starting up..."
+    IDS_MPLAYER_FAILED      "MPlayer failed to start!"
+    IDS_MPLAYER_PLAYING_LIST "Playing... (list)"
+    IDS_MPLAYER_ASKTOQUIT   "Quitting..."
+    IDS_MPLAYER_FILENOTEXIST "File does not exist"
+    IDS_MPLAYER_NOENGINE    "Engine not found!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PLAY_PLAY            "Start playback\nPlay"
+    ID_PLAY_STOP            "Stop\nStop"
+    ID_PLAY_PAUSE           "Pause\nPause"
+    ID_FILE_CLOSE_FILE      "Close"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_FULLSCREEN      "Full Screen"
+    ID_FILE_CLIPPROPERTY    "Clip properties"
+    ID_VIEW_ALWAYSONTOP     "Toggle Always on Top"
+    ID_VIEW_KEEPASPECTRATIO "Keep Aspect Ratio"
+    ID_VIEW_PROGRESS_BAR    "Show or hide the Progress Bar"
+    ID_PLAY_FF10S           "FF 10 Seconds"
+    ID_PLAY_REW10S          "RW 10 Seconds"
+    ID_PLAY_FF1M            "FF 1 Minute"
+    ID_PLAY_REW1M           "RW 1 Minute"
+    ID_PLAY_FF10M           "FF 10 Minutes"
+    ID_PLAY_REW10M          "RW 10 Minutes"
+    ID_PLAY_REPEAT          "Repeat\nRepeat"
+    ID_VOLUME_100           "100% Volume"
+    ID_VOLUME_75            "75% Volume"
+    ID_VOLUME_50            "50% Volume"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VOLUME_25            "25% Volume"
+    ID_VOLUME_MUTE          "Mute\nMute"
+    ID_OPTIONS_PREFERENCES  "Show Preferences Dialog"
+    ID_VIEW_PLAYLIST        "Show or hide the Playlist\nPlaylist"
+    ID_VIEW_VIDEOSETTINGS   "Show or hide the Video Settings"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_MYTOOLBAR       "Show or hide the Toolbar"
+    ID_OPTIONS_SAVESETTINGS "Save settings to ini file"
+    ID_PLAY_NEXT            "Next\nNext"
+    ID_PLAY_PREVIOUS        "Previous\nPrevious"
+    ID_FILE_OPENURL         "Open URL"
+    ID_PLAY_GOTO            "Go To"
+    ID_VIEW_LOG             "Show or hide the log"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_SLIDER_VOLUME       "\nVolume"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_ZOOMHALF        "Half video size"
+    ID_VIEW_ZOOM1X          "Original video size"
+    ID_VIEW_ZOOM2X          "Double video size"
+    ID_VIEW_ZOOMPRESET      "Preset video zoom size"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\MPlayerGUI.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
